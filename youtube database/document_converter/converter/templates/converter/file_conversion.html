@@ -1,0 +1,78 @@
+<!-- converter/templates/converter/file_conversion.html -->
+
+
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+            <h2>File Conversion</h2>
+        <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <button type="submit">Convert</button>
+        </form>
+    </div>
+  </body>
+  </html>
+
+
+
+
+
+
+{% comment %} 
+  <!-- converter/templates/converter/file_conversion.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>File Conversion</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Convert</button>
+  </form>
+{% endblock %} {% endcomment %}
+
+
+library:
+pip install PyPDF2
+pip install reportlab PyPDF2 python-docx
+
+File Conversion
+
+Convert PDF to Other Formats (e.g., Word, Excel, PowerPoint)
+Convert Other Formats to PDF
+PDF Creation
+Create PDF from Blank Document
+Create PDF from Existing File
+
+Document Editing
+Rotating PDF pages
+Edit PDF Content (if available)
+Merge PDF Files
+Split PDF Files
+Rearrange Pages  
+Rename PDF Files
+Cut PDF Files
+Copy pdf file
+paste pdf file
+Cropping pages
+delete pages
+
+Annotation and Markup (if available)
+Add Comments and Annotations
+Highlight Text
+Draw Shapes and Lines
+Text Redaction
+
+Document Security :
+Add Password Protection
+Digital Signatures
